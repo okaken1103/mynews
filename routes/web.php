@@ -32,6 +32,8 @@ Route::controller(ProfileController::class)->prefix('admin')->name('admin.')->mi
     Route::post('profile/create', 'create')->name('profile.create');
     Route::get('profile/edit', 'edit')->name('profile.edit');
     Route::post('profile/edit', 'update')->name('profile.update');
+    Route::get('plofile', 'index')->name('plofile.index');
+    Route::get('plofile/delete', 'delete')->name('plofile.delete');
 });
 
 use App\Http\Controllers\NewsController as PublicNewsController;
